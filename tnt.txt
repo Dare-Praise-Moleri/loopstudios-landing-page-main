@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Alata">
+    <title>frontend Mentor | Loopstudios landing page</title>
+</head>
+
+<body >
+
+   <header>
+    <div class="overlay"></div>
+        <nav>
+            <img src="./images/logo.svg" alt="logo" width="10%" height="30%" class="logo">
+            
+            <div class="navBar">
+                <a href="" class="menu">About</a> 
+                <a href="" class="menu">Careers</a> 
+                <a href="" class="menu">Events</a> 
+                <a href="" class="menu">Products</a> 
+                <a href="" class="menu">Support</a> 
+            </div>
+        </nav>
+        
+        
+        <h1 class="aside">IMMERSIVE <br> EXPERIENCES <br> THAT DELIVER</h1>
+   </header>
+   <main>
+    <img src="images/desktop/image-interactive.jpg" alt="">
+    <div>
+        <h1>THE LEADER IN INTERACTIVE VR</h1>
+
+        <h3>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</h3>
+    </div>
+   </main>
+
+<section>
+    <span>
+        OUR CREATIONS 
+        <button><a href="#">SEE ALL</a></button>
+    </span>
+
+    <div class="container">
+        <div class="o_lay">
+            <div>
+                <div class="olay2"></div>
+                <img src="images/desktop/image-deep-earth.jpg" alt=""><p>Deep<br>earth</p> <div class="o_lay"> </div>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-night-arcade.jpg" alt=""><p>Night <br> arcade</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-soccer-team.jpg" alt=""><p>Soccer <br>team VR</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-grid.jpg" alt=""><p>The <br>grid</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-from-above.jpg" alt=""><p>From up <br> above VR</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-pocket-borealis.jpg" alt=""><p>Pocket <br>borealis</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div class="">
+                <img src="images/desktop/image-curiosity.jpg" alt=""><p>The <br>curiosity</p>
+            </div>
+        </div>
+        <div class="o_lay">
+            <div>
+                <img src="images/desktop/image-fisheye.jpg" alt=""><p>Make it <br> fisheye</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div class="grid">
+    <div class="one">1 lorem20</div>
+    <div class="two">2</div>
+</div> -->
+
+<footer>
+    <div class="base">
+        <div class="b_icons">
+            <img src="images/logo.svg" alt="" class="b_logo">
+            <div class="s_media">
+                <img src="images/icon-facebook.svg" alt="">
+                <img src="images/icon-twitter.svg" alt="">
+                <img src="images/icon-pinterest.svg" alt="">
+                <img src="images/icon-instagram.svg" alt="">
+            </div>
+        </div>
+       
+        <div class="lastline">
+            <ul class="cta">
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+            <p style="color:white">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+    </div>
+        
+    
+
+  
+    
+    </div>
+</footer>
+</body>
+<!-- responsiveness, font,  -->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url(./fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'alata',sans-serif;
+    src: url(./fonts/Alata-Regular.ttf);
+}
+
+
+:root{
+    --DarkGrey :hsl(0, 0%, 55%);
+    --VeryDarkGrey:hsl(0, 0%, 41%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(images/desktop/image-hero.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    min-block-size: 80vh; 
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    /* place-content: left; */
+    /* <div class="bg-[url()]"> */
+}
+nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    width: 80%;
+    margin:  0 auto;
+    z-index: 10;
+}
+.navBar {
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+div a{
+    text-decoration: none;
+    color: white;
+   /* margin-left: 30px; */
+   font-family: 'alata';
+   /* margin-top: 27px; */
+  
+}
+.aside{
+    border: 1.5px solid; 
+    height: 300px; 
+    width: 40%; 
+    border-color: white; 
+    font-family: JosefinSans-Regular; 
+    font-weight: 100;
+    color: white;
+    z-index: 10;
+    margin: 120px;
+    margin-left: 10%;
+    padding: 25px;
+    padding-left: 40px;
+    font-size: 55px;
+    
+}
+
+.overlay{
+    background-color: black;
+    opacity: 30%;
+    width: 100%;
+    height: 100vh;
+    z-index:-1;
+    position: absolute;
+    top: 0;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    margin-top: 7%;
+    gap: 20%;
+    position: relative;
+}
+main img {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    z-index: -1;
+}
+/* main p{
+    width: 20%;
+    border: 1px solid;
+    padding: 30px;
+
+} */
+main div{
+    border: 1px white;
+    background-color: white;
+    padding: 50px;
+    padding-left: 60px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 90px;
+    height: 300px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 480px;
+    
+}
+main div h1{
+    font-size: 30px;
+    /* position: absolute; */
+}
+main div h3{
+    padding-top: 20px;
+    /* position: absolute; */
+    font-size: 15px;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 30px;
+    row-gap: 30px;
+    position: relative;
+    
+}
+.container div{
+    position: relative;
+    text-align: center;
+
+}
+.container div img{
+    position: relative;
+}
+.container div p{
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+   
+}
+.o_lay{
+    position: relative;
+    /* background-color: rgb(0, 0, 0); */
+    /* opacity: 10%; */
+    width: 100%;
+} 
+
+
+.o_lay:hover img{
+    color: black;
+    filter: opacity(40%);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.olay2{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* opacity: 0.5; */
+}
+footer{
+    margin-top: 170px;
+    height: 140px;
+    width: 100%;
+    background-color: black;
+}
+.base{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.cta{
+    color: white;
+    
+}
+.b_logo{
+    width: 170px;
+}
+.b_icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 100%;
+    
+    
+}
+.s_media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.lastline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* @media screen and (max-width: 600px) {
+    .row1 div {
+      width: 100%;
+    }
+    .row1 div {
+        width: 100%;
+      }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################################
+ <h1 class="aside">IMMERSIVE <br> EXPERIENCES <br> THAT DELIVER</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+############################################################################################
+/* .aside{
+    width: 80%;
+    margin:  0 auto;
+    border: none;
+} */
+/* .sect_a{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10%;
+}
+.aside{
+    border: 1.5px solid white;
+    width: 55%;
+    padding: 30px 40px;
+} */
+
+/* .immersive{
+    box-sizing: border-box;
+    color: white;
+    
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 60px;
+    font-size: clamp(5px, 4vw, 55px);
+    font-family: 'JosefinSans-Light';
+} */
+.aside{
+    border: 1.5px solid; 
+    height: 300px; 
+    width: 40%; 
+    border-color: white; 
+    font-family: 'JosefinSans-Light'; 
+    font-weight: 100;
+    color: white;
+    z-index: 10;
+    margin: 120px;
+    margin-left: 10%;
+    padding: 25px;
+    padding-left: 40px;
+    font-size: 55px;
+    
+}
+/* .aside h1{
+    border: 2px solid; 
+    height: 300px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    border-color: white; 
+    font-family: 'JosefinSans-Light'; 
+    font-weight: 100;
+    color: white;
+    z-index: 10;
+    margin: 120px;
+    margin-top: 15%;
+    font-size: 70px;
+    line-height: 60px;
+    padding: 30px 40px;
+    padding-top: 45px;
+    overflow: hidden;
+    max-width: 100vw;
+    
+} */
